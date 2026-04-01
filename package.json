@@ -1,0 +1,24 @@
+{
+  "name": "balcony-simulator",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@tarikjabiri/dxf": "^2.8.9",
+    "@vitejs/plugin-react": "^4.2.1",
+    "dxf-composer": "^0.1.3",
+    "dxf-writer": "^1.18.4",
+    "lucide-react": "^1.7.0",
+    "makerjs": "^0.19.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "three": "^0.183.2",
+    "vite": "^4.5.3"
+  }
+}
