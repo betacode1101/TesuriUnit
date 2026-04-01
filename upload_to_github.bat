@@ -1,30 +1,29 @@
 @echo off
-echo Dang don dep cac file rac (node_modules)...
-git rm -r --cached node_modules >nul 2>&1
-echo.
+echo ==================================== > git_log.txt
+echo Kiem tra tien trinh Git... >> git_log.txt
+echo ==================================== >> git_log.txt
 
-echo Dang them file (bo qua file rac)...
-git add .
-echo.
+echo 1. Init >> git_log.txt
+git init >> git_log.txt 2>&1
 
-echo Dang tao commit...
-git commit -m "Auto upload to GitHub"
-echo.
+echo 2. Remove cached node_modules >> git_log.txt
+git rm -r --cached node_modules >> git_log.txt 2>&1
 
-echo Dang tao nhanh main...
-git branch -M main
-echo.
+echo 3. Add files >> git_log.txt
+git add . >> git_log.txt 2>&1
 
-echo Dang lien ket voi kho chua: https://github.com/betacode1101/TesuriUnit.git...
-git remote add origin https://github.com/betacode1101/TesuriUnit.git >nul 2>&1
-git remote set-url origin https://github.com/betacode1101/TesuriUnit.git >nul 2>&1
-echo.
+echo 4. Commit >> git_log.txt
+git commit -m "Auto upload to GitHub" >> git_log.txt 2>&1
 
-echo Dang day code len GitHub...
-git push -u origin main
-echo.
+echo 5. Branch >> git_log.txt
+git branch -M main >> git_log.txt 2>&1
 
-echo ==============================================
-echo Hoan thanh viec day code len GitHub! 
-echo ==============================================
+echo 6. Config Remote >> git_log.txt
+git remote add origin https://github.com/betacode1101/TesuriUnit.git >> git_log.txt 2>&1
+git remote set-url origin https://github.com/betacode1101/TesuriUnit.git >> git_log.txt 2>&1
+
+echo 7. Push to GitHub >> git_log.txt
+git push -u origin main >> git_log.txt 2>&1
+
+echo Hoan thanh! Hay quay lai chat voi AI.
 pause

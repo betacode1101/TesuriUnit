@@ -1,0 +1,8 @@
+==================================== 
+Kiem tra tien trinh Git... 
+==================================== 
+1. Init 
+Reinitialized existing Git repository in C:/Baron/Antigravity Projects/First app/.git/
+2. Remove cached node_modules 
+fatal: pathspec 'node_modules' did not match any files
+3. Add files 
